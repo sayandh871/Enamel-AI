@@ -1,13 +1,11 @@
-"use client"
-import { SignOutButton } from "@clerk/nextjs";
-import { useRouter } from "next/navigation";
+import Navbar from "@/components/Navbar";
 
 const DashboardPage = () => {
-  const router = useRouter();
-  return (
-    <div>dashboard</div>
-  )
-}
+  return <div>
+    <Navbar />
+    dashboard
+    
+  </div>;
+};
 
-export default DashboardPage
-
+export default DashboardPage;
