@@ -1,36 +1,87 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Enamel AI 🦷
 
-## Getting Started
+A voice-enabled AI dental assistant web application built with **Next.js**, **TypeScript**, **Prisma**, and **PostgreSQL**. Enamel AI enables real-time speech interaction for dental intake, appointment scheduling, and AI-assisted patient conversations.
 
-First, run the development server:
+## 🚀 Overview
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+Enamel AI provides clinicians and patients with a natural voice-based interface for describing symptoms, scheduling appointments, and receiving context-aware AI assistance.
+
+**Key capabilities**:
+
+* Real-time speech-to-text conversation interface
+* AI-driven contextual responses
+* User, doctor, and appointment management
+* Role-based secure authentication
+* Persistent conversation history for continuous context
+
+## ✨ Features
+
+* 🎤 **Voice Assistant** — Live speech input + transcript streaming
+* 🤖 **AI Conversational Engine** — Context-aware suggestions and dental support
+* 🗂️ **Appointment System** — Book, manage, and track appointments
+* 🔐 **Auth & Roles** — Clerk integration for secure patient/doctor access
+* 📊 **Database Models** — Prisma + PostgreSQL schemas for healthcare workflows
+* 📱 **Responsive UI** — Tailwind components optimized for clinical usability
+* ⚡ **Optimized Dev Flow** — pnpm + Next.js performance tuning
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js, React, TypeScript, Tailwind CSS, Lucide Icons
+* **Backend:** Prisma ORM, PostgreSQL
+* **Authentication:** Clerk
+* **Voice Processing:** Web Speech API
+* **AI Intelligence:** Server-side LLM-powered responses
+* **Dev Workflow:** pnpm, CI-ready project structure
+
+## 📂 Project Structure
+
+```
+📦 enamel-ai
+ ┣ 📂 app
+ ┣ 📂 components
+ ┣ 📂 lib
+ ┣ 📂 prisma
+ ┣ 📂 hooks
+ ┣ 📂 styles
+ ┣ package.json
+ ┗ README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🧠 Key System Concepts
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+| Module       | Description                                          |
+| ------------ | ---------------------------------------------------- |
+| Voice Engine | Speech-to-text + audio controls                      |
+| AI Layer     | Contextual dental guidance + appointment suggestions |
+| Database     | Role-based access + appointment models               |
+| Auth         | Clerk-managed secure login & sessions                |
+| UI Layer     | Tailwind UI, responsive and clinic-friendly          |
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🧪 Features Demonstrated
 
-## Learn More
+* Conversational AI UX for medical workflows
+* Scalable Prisma schema design
+* Protected routes + role authorization
+* Data persistence and context retention
+* Production-grade performance configs
 
-To learn more about Next.js, take a look at the following resources:
+## 🚧 Roadmap
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* ✅ Conversational voice UI
+* ✅ Appointment workflows
+* ✅ AI symptom guidance
+* 🔜 Payment integration (Stripe / Razorpay)
+* 🔜 Doctor dashboard + EMR features
+* 🔜 Mobile-friendly voice UI improvements
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🤝 Contributing
 
-## Deploy on Vercel
+This project is actively evolving — suggestions and contributions welcome.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📄 License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License
+
+---
+
+> Built for real healthcare workflows. Designed with precision. Executed with passion.
