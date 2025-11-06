@@ -1,13 +1,14 @@
-import { getUserAppointmentStatus } from '@/lib/actions/appointment'
+
 import { currentUser } from "@clerk/nextjs/server";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "../ui/card";
 import { BrainIcon, MessageSquareIcon } from "lucide-react";
 import { format } from "date-fns";
 import Link from "next/link";
 import { Button } from "../ui/button";
+import { getUserAppointmentStats } from "@/lib/actions/appointment";
 
 async function DentalHealthOverview() {
-  const appointmentStats = await getUserAppointmentStatus();
+  const appointmentStats = await getUserAppointmentStats();
   const user = await currentUser();
 
   return (
