@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import CTA from "@/components/landing/CTA";
 import Footer from "@/components/landing/Footer";
 import Header from "@/components/landing/Header";
