@@ -13,7 +13,10 @@ RUN npm ci
 COPY . .
 
 # Generate Prisma client
+# Set a temporary DATABASE_URL during build (doesn't affect runtime)
+ENV DATABASE_URL="postgresql://placeholder_user:placeholder_pass@localhost:5432/placeholder_db?schema=public"
 RUN npx prisma generate
+
 
 # Build the Next.js app
 RUN npm run build
