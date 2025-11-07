@@ -4,6 +4,11 @@ FROM node:20-alpine AS builder
 # Create app directory
 WORKDIR /app
 
+# Inject public environment variables during build
+ARG NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY
+ENV NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=${NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+
+
 # Install dependencies
 COPY package*.json ./
 RUN npm install -g npm@latest
